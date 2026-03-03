@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="Thepoke.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-area">
+            <label for="pokeInput">Name or ID</label>
+            <input type="text" id="pokeInput">
+            <button id="findBtn">Find</button>
+        </div>
+
+        <div class="sprite-area">
+            <img id="pokeImage" src="" alt="Pokemon Sprite" style="display: none;">
+        </div>
+
+        <div class="audio-area">
+            <audio id="pokeAudio" controls></audio>
+        </div>
+
+        <div class="moves-area">
+            <select id="move1"></select>
+            <select id="move2"></select>
+            <select id="move3"></select>
+            <select id="move4"></select>
+        </div>
+
+        <button id="addBtn">Add to Team</button>
+
+        <div id="teamContainer">
+            <table id="teamTable">
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Thepoke.js"></script>
+</body>
+</html>
